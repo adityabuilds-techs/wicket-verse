@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090d0c" />
+  <meta name="description" content="Play daily cricket and IPL games. Guess legendary cricketers, decode stats, build your XI and challenge your friends." />
+  <meta property="og:title" content="WicketVerse — Every day is match day" />
+  <meta property="og:description" content="Your daily dose of cricket games. Play, score and challenge your friends." />
+  <title>WicketVerse — Every day is match day</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="WicketVerse home"><span class="brand-mark">W<span>V</span></span><span>WICKET<span class="brand-light">VERSE</span><small>EVERY DAY IS MATCH DAY</small></span></a>
+    <nav class="desktop-nav"><a class="active" href="#games">Games</a><a href="#daily">Daily challenge</a><a href="#how">How to play</a></nav>
+    <div class="top-actions"><div class="streak"><span>🔥</span><b id="streakCount">0</b><small>STREAK</small></div><button class="profile-btn" id="profileBtn" title="Profile">♙</button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+  </header>
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> THE HOME OF DAILY CRICKET GAMES</div><h1>CRICKET IS<br/><span>IN OUR DNA.</span></h1><p>Think you know the game? Prove it. Take on daily challenges, decode legendary careers and build your ultimate XI.</p><div class="hero-actions"><a class="btn btn-primary" href="#games">Explore games <span>↗</span></a><a class="text-link" href="#daily">Today's challenge <span>→</span></a></div><div class="hero-meta"><div class="avatar-stack"><i>🏏</i><i>🇮🇳</i><i>🏆</i></div><span>For fans who live and breathe cricket.</span></div></div>
+      <div class="hero-art"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="hero-ball">🏏</div><div class="hero-sticker sticker-top">THE 22-YARD<br/>UNIVERSE</div><div class="hero-sticker sticker-bottom"><b>01</b><span>PLAY<br/>EVERY DAY</span></div><div class="hero-vertical">EST. FOR THE LOVE OF THE GAME</div></div>
+    </section>
+    <section class="ticker"><div>GUESS <b>•</b> PLAY <b>•</b> COMPETE <b>•</b> REPEAT <b>•</b> GUESS <b>•</b> PLAY <b>•</b> COMPETE <b>•</b> REPEAT <b>•</b></div></section>
+    <section class="daily-section wrap" id="daily"><div class="section-head"><div><div class="eyebrow">YOUR DAILY FIX</div><h2>THE DAILY <em>DUEL.</em></h2></div><div class="date-chip" id="todayDate">TODAY'S CHALLENGE</div></div>
+      <div class="daily-card"><div class="daily-main"><div class="daily-label"><span class="live-dot"></span> FEATURED CHALLENGE · NO. <span id="dailyNumber">001</span></div><h3>Can you name<br/>the <em>legend?</em></h3><p>Three clues. One iconic cricketer. How quickly can you get it?</p><button class="btn btn-primary" data-open-game="guess">Play today's game <span>→</span></button></div><div class="daily-side"><div class="mystery-number">?</div><div class="daily-side-caption">A LEGEND<br/>AWAITS.</div><div class="daily-stats"><span><b>01</b> DAILY PUZZLE</span><span><b>∞</b> BRAGGING RIGHTS</span></div></div></div>
+    </section>
+    <section class="games-section wrap" id="games"><div class="section-head"><div><div class="eyebrow">PICK YOUR PLAY</div><h2>THE GAME <em>ZONE.</em></h2></div><span class="section-note">8 WAYS TO PROVE YOUR CRICKET IQ</span></div>
+      <div class="game-grid">
+        <article class="game-card card-featured" data-game="guess"><div class="card-top"><span class="game-tag">DAILY GAME</span><span class="card-arrow">↗</span></div><div class="game-visual visual-guess"><div class="silhouette">?</div><span class="visual-caption">WHO'S THE LEGEND?</span></div><div class="game-info"><div><h3>Guess The Cricketer</h3><p>Decode the clues. Name the icon.</p></div><span class="play-icon">→</span></div></article>
+        <article class="game-card" data-game="stats"><div class="card-top"><span class="game-tag">STAT ATTACK</span><span class="card-arrow">↗</span></div><div class="game-visual visual-stats"><div class="stat-big">18,000<span>+</span></div><div class="stat-lines"><i></i><i></i><i></i></div><span class="visual-caption">NUMBERS DON'T LIE</span></div><div class="game-info"><div><h3>IPL Stat Detective</h3><p>Find the player behind the numbers.</p></div><span class="play-icon">→</span></div></article>
+        <article class="game-card" data-game="connections"><div class="card-top"><span class="game-tag">BRAIN GAME</span><span class="card-arrow">↗</span></div><div class="game-visual visual-connect"><div class="connect-tiles"><i>CSK</i><i>MI</i><i>RCB</i><i>KKR</i></div><span class="visual-caption">FIND THE CONNECTION</span></div><div class="game-info"><div><h3>Cricket Connections</h3><p>Four players. One common thread.</p></div><span class="play-icon">→</span></div></article>
+        <article class="game-card" data-game="xi"><div class="card-top"><span class="game-tag">SQUAD BUILDER</span><span class="card-arrow">↗</span></div><div class="game-visual visual-xi"><div class="mini-pitch"><div class="pitch-ring"></div><b>YOUR XI</b><span>BUILD YOUR LEGACY</span></div></div><div class="game-info"><div><h3>Build Your XI</h3><p>Pick your dream team. Own the debate.</p></div><span class="play-icon">→</span></div></article>
+        <article class="game-card" data-game="silhouette"><div class="card-top"><span class="game-tag">WHO AM I?</span><span class="card-arrow">↗</span></div><div class="game-visual visual-silhouette"><div class="player-shadow">♟</div><div class="jersey-no">?</div><span class="visual-caption">ONE SHAPE. ONE SUPERSTAR.</span></div><div class="game-info"><div><h3>Who's That Player?</h3><p>Spot the star from visual clues.</p></div><span class="play-icon">→</span></div></article>
+        <article class="game-card" data-game="mystery"><div class="card-top"><span class="game-tag">IPL THROWBACK</span><span class="card-arrow">↗</span></div><div class="game-visual visual-mystery"><div class="trophy">🏆</div><div class="year">20<span>?</span>?</div><span class="visual-caption">RELIVE THE IPL</span></div><div class="game-info"><div><h3>IPL Mystery</h3><p>Seasons, champions and iconic moments.</p></div><span class="play-icon">→</span></div></article>
+        <article class="game-card" data-game="quiz"><div class="card-top"><span class="game-tag">QUICK FIRE</span><span class="card-arrow">↗</span></div><div class="game-visual visual-quiz"><div class="quiz-mark">Q<span>!</span></div><span class="visual-caption">HOW WELL DO YOU KNOW CRICKET?</span></div><div class="game-info"><div><h3>Cricket Brain Test</h3><p>Fast questions. Serious bragging rights.</p></div><span class="play-icon">→</span></div></article>
+        <article class="game-card" data-game="auction"><div class="card-top"><span class="game-tag">VIRTUAL AUCTION</span><span class="card-arrow">↗</span></div><div class="game-visual visual-auction"><div class="bid-stamp">SOLD!</div><div class="bid-amount">₹<span>100</span><small>CR BUDGET</small></div><span class="visual-caption">BUILD YOUR CHAMPIONS</span></div><div class="game-info"><div><h3>Auction Simulator</h3><p>Manage your purse. Build a champion.</p></div><span class="play-icon">→</span></div></article>
+      </div>
+    </section>
+    <section class="manifesto wrap" id="how"><div class="manifesto-mark">W<span>V</span></div><div><div class="eyebrow">MORE THAN A SCORE</div><h2>MADE FOR THE<br/><em>CRICKET-OBSESSED.</em></h2><p>No complicated setup. No gatekeeping. Just great cricket games, a fresh challenge and your chance to settle the group-chat debate.</p></div><div class="manifesto-points"><div><b>01</b><span>PLAY FOR FREE</span></div><div><b>02</b><span>SHARE YOUR SCORE</span></div><div><b>03</b><span>COME BACK TOMORROW</span></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-mark">W<span>V</span></span><span>WICKET<span class="brand-light">VERSE</span><small>EVERY DAY IS MATCH DAY</small></span></a><span>BUILT FOR THE LOVE OF CRICKET. <span id="year"></span></span><a href="#home">BACK TO TOP ↑</a></footer>
+  <div class="modal-backdrop" id="gameModal" aria-hidden="true"><section class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><div class="eyebrow" id="modalEyebrow">WICKETVERSE GAME</div><h2 id="modalTitle">Game title</h2></div><button class="close-modal" id="closeModal" aria-label="Close">×</button></div><div id="gameContent" class="game-content"></div><div class="modal-foot"><span>WICKETVERSE · PLAY FAIR, PLAY FOR FUN</span><button class="share-btn" id="shareBtn">↗ Share result</button></div></section></div>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
